@@ -20,17 +20,27 @@ h1 {
 
 .section {
   margin-bottom: 20px;
+  font-weight: normal;
+  border: 5px solid #F9B572 ;
 }
 
 .section h2 {
   background-color: #648b70;
+  font-family: 'Cormorant Garamond', serif;
   color: #fff;
   padding: 10px;
 }
 
 .section ul {
-  list-style: none;
+  list-style:none;
   padding: 0;
+}
+
+ul {list-style-type: none;}
+
+li::before {
+  content: "⚝";
+  display: inline-block;
 }
 
 .section ul li {
@@ -39,4 +49,8 @@ h1 {
 
 img {
   border-radius: 50%;
+}
+
+h2 {
+  font-weight: normal;
 }
