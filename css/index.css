@@ -18,13 +18,13 @@ h1 {
   font-size: 70px;
 }
 
-.section {
+section {
   margin-bottom: 20px;
   font-weight: normal;
   border: 5px solid #F9B572 ;
 }
 
-.section h2 {
+section h2 {
   background-color: #648b70;
   font-family: 'Cormorant Garamond', serif;
   color: #fff;
@@ -55,16 +55,38 @@ h2 {
   font-weight: normal;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: row;
-  gap: 70px;
-  padding: 1rem;
+
+
+
+header {
+  padding: 1rem;/* ajoutez un padding de 1rem 0 */
+  margin: 0;/* ajoutez un margin de 0 */
 }
 
-.box {
+
+@media (max-width: 720px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  header img {
+    order: -1;
+  }
+}
+
+.content {
   display: flex;
-  flex-direction: column;
-  width: auto;
-  height: auto;
+  gap: 1rem;
+}
+
+#col-1{
+  width: 33%;
+}
+
+#col-2 {
+  flex-direction: row;
+}
+
+.gauche, droite {
+  width: 50%;
 }
