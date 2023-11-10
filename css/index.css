@@ -54,3 +54,17 @@ img {
 h2 {
   font-weight: normal;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: row;
+  gap: 70px;
+  padding: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
