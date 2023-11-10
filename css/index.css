@@ -90,3 +90,15 @@ header {
 .gauche, droite {
   width: 50%;
 }
+
+.banner-container { width: 100%; overflow: hidden; 
+background-color:#648b70;
+color: aliceblue;
+font-size: 30px;
+} 
+.banner { width: 100%; white-space: nowrap; /* Empêche le texte de passer à la ligne */ animation: scroll 10s linear infinite;  
+} 
+@keyframes scroll { from { transform: translateX(100%); 
+ } 
+ to { transform: translateX(-100%);
+  
